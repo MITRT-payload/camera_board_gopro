@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0101
+U 1 1 5DD22A9C
+P 2250 2000
+F 0 "#PWR0101" H 2250 1850 50  0001 C CNN
+F 1 "+5V" H 2265 2173 50  0000 C CNN
+F 2 "" H 2250 2000 50  0001 C CNN
+F 3 "" H 2250 2000 50  0001 C CNN
+	1    2250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DD22FC6
+P 2250 2950
+F 0 "#PWR0102" H 2250 2700 50  0001 C CNN
+F 1 "GND" H 2255 2777 50  0000 C CNN
+F 2 "" H 2250 2950 50  0001 C CNN
+F 3 "" H 2250 2950 50  0001 C CNN
+	1    2250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C1
+U 1 1 5DD236A9
+P 1800 2450
+F 0 "C1" H 1978 2496 50  0000 L CNN
+F 1 "0.1uF" H 1978 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1800 2450 50  0001 C CNN
+F 3 "~" H 1800 2450 50  0001 C CNN
+	1    1800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5DD23CA7
+P 2750 2450
+F 0 "D1" V 2789 2333 50  0000 R CNN
+F 1 "LED" V 2698 2333 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 2750 2450 50  0001 C CNN
+F 3 "~" H 2750 2450 50  0001 C CNN
+	1    2750 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5DD25991
+P 3150 2450
+F 0 "D2" V 3189 2333 50  0000 R CNN
+F 1 "LED" V 3098 2333 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 3150 2450 50  0001 C CNN
+F 3 "~" H 3150 2450 50  0001 C CNN
+	1    3150 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5DD26221
+P 3550 2450
+F 0 "D3" V 3589 2333 50  0000 R CNN
+F 1 "LED" V 3498 2333 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 3550 2450 50  0001 C CNN
+F 3 "~" H 3550 2450 50  0001 C CNN
+	1    3550 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5DD26227
+P 3950 2450
+F 0 "D4" V 3989 2333 50  0000 R CNN
+F 1 "LED" V 3898 2333 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 3950 2450 50  0001 C CNN
+F 3 "~" H 3950 2450 50  0001 C CNN
+	1    3950 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5DD267AD
+P 4350 2450
+F 0 "D5" V 4389 2333 50  0000 R CNN
+F 1 "LED" V 4298 2333 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 4350 2450 50  0001 C CNN
+F 3 "~" H 4350 2450 50  0001 C CNN
+	1    4350 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 2000 2250 2200
+Wire Wire Line
+	2250 2200 2750 2200
+Wire Wire Line
+	2750 2200 2750 2300
+Wire Wire Line
+	2750 2200 3150 2200
+Wire Wire Line
+	3150 2200 3150 2300
+Connection ~ 2750 2200
+Wire Wire Line
+	3150 2200 3550 2200
+Wire Wire Line
+	3550 2200 3550 2300
+Connection ~ 3150 2200
+Wire Wire Line
+	3550 2200 3950 2200
+Wire Wire Line
+	3950 2200 3950 2300
+Connection ~ 3550 2200
+Wire Wire Line
+	3950 2200 4350 2200
+Connection ~ 3950 2200
+Wire Wire Line
+	2250 2700 2250 2950
+Wire Wire Line
+	2750 2700 2750 2600
+Wire Wire Line
+	2750 2700 3150 2700
+Wire Wire Line
+	3150 2700 3150 2600
+Wire Wire Line
+	3150 2700 3550 2700
+Wire Wire Line
+	3550 2700 3550 2600
+Connection ~ 3150 2700
+Wire Wire Line
+	3550 2700 3950 2700
+Wire Wire Line
+	3950 2700 3950 2600
+Connection ~ 3550 2700
+Wire Wire Line
+	3950 2700 4350 2700
+Wire Wire Line
+	4350 2700 4350 2600
+Connection ~ 3950 2700
+$Comp
+L Device:R R1
+U 1 1 5DD27C28
+P 2500 2700
+F 0 "R1" V 2293 2700 50  0000 C CNN
+F 1 "50" V 2384 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2430 2700 50  0001 C CNN
+F 3 "~" H 2500 2700 50  0001 C CNN
+	1    2500 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 2700 2750 2700
+Connection ~ 2750 2700
+Wire Wire Line
+	2350 2700 2250 2700
+Wire Wire Line
+	1800 2200 2250 2200
+Connection ~ 2250 2200
+Wire Wire Line
+	1800 2700 2250 2700
+Connection ~ 2250 2700
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5DD2DF1A
+P 4950 2400
+F 0 "J1" H 5030 2392 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5030 2301 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 4950 2400 50  0001 C CNN
+F 3 "~" H 4950 2400 50  0001 C CNN
+	1    4950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2200 4350 2300
+Wire Wire Line
+	4350 2200 4750 2200
+Wire Wire Line
+	4750 2200 4750 2400
+Connection ~ 4350 2200
+Wire Wire Line
+	4350 2700 4750 2700
+Wire Wire Line
+	4750 2700 4750 2500
+Connection ~ 4350 2700
+$EndSCHEMATC
